@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assinaturas de email | BIC Seguros</title>
+  <style>
+    :root {
+      --red: #C20E1A;
+      --cyan: #02BCF5;
+      --ink: #222222;
+      --muted: #666666;
+      --line: #e6e6e6;
+      --paper: #ffffff;
+      --page: #f4f4f4;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+
+    a { color: inherit; }
+
+    .top {
+      background: var(--red);
+      color: #fff;
+    }
+
+    .top-inner,
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .top-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 88px;
+      padding: 18px 0;
+    }
+
+    .logo {
+      display: block;
+      width: 148px;
+      height: auto;
+    }
+
+    .top-tag {
+      margin: 0;
+      font-size: 12px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      opacity: .9;
+    }
+
+    .hero {
+      padding: 36px 0 8px;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      line-height: 1.15;
+      font-weight: 700;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .count {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--red);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .4px;
+    }
+
+    .list {
+      padding: 28px 0 64px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .item {
+      display: grid;
+      grid-template-columns: minmax(260px, 340px) 1fr;
+      background: var(--paper);
+      border-top: 6px solid var(--red);
+    }
+
+    .item:nth-child(even) {
+      border-top-color: var(--cyan);
+    }
+
+    .meta {
+      padding: 28px 28px 24px;
+      border-right: 1px solid var(--line);
+    }
+
+    .num {
+      margin: 0 0 12px;
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    .item h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    .item p {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      background: var(--red);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .preview {
+      position: relative;
+      min-height: 268px;
+      overflow: hidden;
+      background: var(--page);
+    }
+
+    .preview iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 680px;
+      height: 340px;
+      border: 0;
+      transform: scale(.72);
+      transform-origin: top left;
+      pointer-events: none;
+    }
+
+    footer {
+      border-top: 4px solid var(--red);
+      background: #fff;
+    }
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .foot em {
+      font-style: italic;
+      color: var(--ink);
+    }
+
+    @media (max-width: 860px) {
+      .item {
+        grid-template-columns: 1fr;
+      }
+
+      .meta {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .preview iframe {
+        transform: scale(.58);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .top-inner,
+      .wrap {
+        width: calc(100% - 28px);
+      }
+
+      .hero h1 { font-size: 26px; }
+
+      .preview {
+        min-height: 210px;
+      }
+
+      .preview iframe {
+        transform: scale(.48);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <a href="https://www.bicseguros.ao" target="_blank" rel="noopener">
+        <img class="logo" src="https://res.cloudinary.com/dxh5j773r/image/upload/v1785939956/logo_em_branco_a3par8.svg" alt="BIC Seguros">
+      </a>
+      <p class="top-tag">Assinaturas de email</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Propostas de assinatura</h1>
+      <p>Seleccione uma proposta para abrir a versão completa. Depois, copie apenas a tabela da assinatura para o Outlook, Gmail ou outro cliente de email.</p>
+      <span class="count">15 propostas</span>
+    </section>
+
+    <section class="list" aria-label="Lista de propostas">
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 01</p>
+          <h2>Clássica</h2>
+          <p>Bloco vermelho com logótipo à esquerda e dados de contacto à direita. Versão compacta, sem banner.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-1-classica.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-1-classica.html" title="Pré-visualização da proposta clássica" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 02</p>
+          <h2>Ultra wide</h2>
+          <p>Mesmo layout clássico, com área reservada para um banner institucional de aproximadamente 600 × 90 px.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-2-ultra-wide.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-2-ultra-wide.html" title="Pré-visualização da proposta ultra wide" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 03</p>
+          <h2>Horizontal</h2>
+          <p>Logótipo e contactos lado a lado, com faixa ultra wide a largura total. Modelo com campos para preencher.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-3-horizontal.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-3-horizontal.html" title="Pré-visualização da proposta horizontal" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 03 · Exemplo</p>
+          <h2>Horizontal — Márcia Nunes</h2>
+          <p>A mesma composição horizontal, já preenchida com os dados da Coordenadora de Marketing e Comunicação.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-3-horizontal-marcia.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-3-horizontal-marcia.html" title="Pré-visualização da proposta horizontal da Márcia Nunes" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 04</p>
+          <h2>Editorial</h2>
+          <p>Composição assimétrica, barra lateral vermelha e faixa ultra wide interior. Versão com dados da Márcia Nunes.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-4-editorial.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-4-editorial.html" title="Pré-visualização da proposta editorial" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 05</p>
+          <h2>Minimal</h2>
+          <p>Versão compacta, sem banner. Logótipo pequeno, contactos numa só linha e faixa ciano fina.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-5-minimal.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-5-minimal.html" title="Pré-visualização da proposta minimal" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 06</p>
+          <h2>Institucional</h2>
+          <p>Cabeçalho vermelho a largura total, com o slogan à direita. Corpo branco com contactos completos.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-6-institucional.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-6-institucional.html" title="Pré-visualização da proposta institucional" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 07</p>
+          <h2>Logo à direita</h2>
+          <p>Espelho da clássica: dados à esquerda e bloco vermelho com logótipo à direita. Rodapé vermelho.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-7-logo-direita.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-7-logo-direita.html" title="Pré-visualização da proposta com logo à direita" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 08</p>
+          <h2>Campanha</h2>
+          <p>Banner ultra wide no topo, para mensagens de campanha. Identidade e contactos por baixo.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-8-campanha.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-8-campanha.html" title="Pré-visualização da proposta campanha" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 09</p>
+          <h2>Coluna ciano</h2>
+          <p>Barra vertical ciano à esquerda. Composição empilhada, sem banner, com telefone geral e telemóvel.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-9-coluna-ciano.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-9-coluna-ciano.html" title="Pré-visualização da proposta coluna ciano" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 10</p>
+          <h2>Rodapé vermelho</h2>
+          <p>Identidade em fundo branco, faixa para banner e rodapé vermelho com slogan e redes sociais.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-10-rodape-vermelho.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-10-rodape-vermelho.html" title="Pré-visualização da proposta rodapé vermelho" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 11</p>
+          <h2>Executiva</h2>
+          <p>Formato baixo, numa só linha: logótipo, nome, contactos e redes. Adequada a correspondência breve.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-11-executiva.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-11-executiva.html" title="Pré-visualização da proposta executiva" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 12</p>
+          <h2>Duas faixas</h2>
+          <p>Faixa vermelha no topo e ciano na base. Contactos em duas colunas, sem área de banner.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-12-duas-faixas.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-12-duas-faixas.html" title="Pré-visualização da proposta duas faixas" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 13</p>
+          <h2>Contactos em linha</h2>
+          <p>Nome à esquerda, logótipo à direita, telefone, email e site separados por barras ciano, com banner.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-13-contactos-linha.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-13-contactos-linha.html" title="Pré-visualização da proposta contactos em linha" tabindex="-1"></iframe>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="meta">
+          <p class="num">Proposta 14</p>
+          <h2>Com fotografia</h2>
+          <p>Espaço para foto do colaborador (88 × 88 px), dados ao centro e logótipo à direita.</p>
+          <div class="actions">
+            <a class="btn" href="proposta-14-com-foto.html">Abrir proposta</a>
+          </div>
+        </div>
+        <div class="preview">
+          <iframe src="proposta-14-com-foto.html" title="Pré-visualização da proposta com fotografia" tabindex="-1"></iframe>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span><em>Seguramente juntos</em></span>
+      <span>BIC Seguros</span>
+    </div>
+  </footer>
+</body>
+</html>
